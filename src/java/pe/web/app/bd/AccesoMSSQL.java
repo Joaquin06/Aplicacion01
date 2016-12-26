@@ -48,9 +48,9 @@ public class AccesoMSSQL {
         
        //prueba de conexion
         
-       public static void main(String[] args) {
-        AccesoMSSQL con=new AccesoMSSQL();
-    }
+//       public static void main(String[] args) {
+//        AccesoMSSQL con=new AccesoMSSQL();
+//    }
         
     
 }
