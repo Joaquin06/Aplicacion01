@@ -59,7 +59,7 @@ public class ModeloAtraccion extends AccesoMSSQL{
         public static void main(String[] args) {
         ModeloAtraccion mp=new ModeloAtraccion();
         for (Atraccion a : mp.getAllAtracciones()) {
-            System.out.println(a.getNombre());
+            System.out.println(a.getUmbrales());
         }
         
     }
