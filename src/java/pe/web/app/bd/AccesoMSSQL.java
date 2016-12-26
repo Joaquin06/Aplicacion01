@@ -16,12 +16,13 @@ import java.sql.SQLException;
 public class AccesoMSSQL {
     
      private String USERNAME="sa";
-        private String PASSWORD="diversion";
+        //private String PASSWORD="diversion";
+        private String PASSWORD="Joaquin06";
         //private String HOST="localhost";
         //private String PORT="3306";
        // private String DATABASE="comercio";
         private String CLASSNAME="com.microsoft.sqlserver.jdbc.SQLServerDriver";
-        private String URL="jdbc:sqlserver://192.168.1.74:1433;databaseName=BDTemporal";
+        private String URL="jdbc:sqlserver://192.168.1.5:1433;databaseName=BDTemporal";
         
         private Connection con;
         
