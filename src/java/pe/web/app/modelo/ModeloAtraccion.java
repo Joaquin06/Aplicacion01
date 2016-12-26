@@ -29,7 +29,7 @@ public class ModeloAtraccion extends AccesoMSSQL{
                 pst=getConexion().prepareCall(sql);
                 rs=pst.executeQuery();
                 while (rs.next()) {                
-                atraccion.add(new  Atraccion(rs.getInt("Cod_Atracc"), rs.getString("Nom_Atracc"), rs.getString("Descripcion"),rs.getInt("Umbral"),rs.getBoolean("estado")));
+                atraccion.add(new  Atraccion(rs.getInt("CODIGO_ATRACC"), rs.getString("NOMBRE_ATRACC"), rs.getString("DESCRIPCION_ATRACC"),rs.getInt("UMBRAL"),rs.getBoolean("ESTADO")));
                     
             }
          
