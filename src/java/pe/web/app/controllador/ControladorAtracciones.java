@@ -30,6 +30,7 @@ public class ControladorAtracciones {
 "                <th>META</th>\n" +
 "                <th>CANT. VISITAS</th>\n" +
 "                <th>ESTADO</th>\n" +
+"                <th>SITUACION</th>\n" +
 "            </tr>\n";
         
         for (Atraccion p : atraccion) {
@@ -39,7 +40,12 @@ public class ControladorAtracciones {
 "                <td>"+p.getUmbrales()+"</td>\n" +
                  "<td>"+"Cantidad dia"+"</td>\n" +
 "                <td>"+p.isEstado()+"</td>\n" +
-"                <td><a id='btn-eliminar' href=\"\">Eliminar</a> <a href=\"\">Modificar</a></td>\n" +
+/*--"                <td><a id='btn-eliminar' href=\"\">Eliminar</a> <a href=\"\">Modificar</a></td>\n" +-->*/
+                 "<td>"+"<div class=\"btn-group\">\n" +
+"      <button type=\"button\" class=\"btn btn-success\">Exito</button>\n" +
+"      <button type=\"button\" class=\"btn btn-warning\">Advertencia</button>\n" +
+"      <button type=\"button\" class=\"btn btn-danger\">Peligro</button>\n" +
+"  </div>"+"</td>\n" +
 "            </tr>\n";
         }
         htmlcode+= "</table>";
