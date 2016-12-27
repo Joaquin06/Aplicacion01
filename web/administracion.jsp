@@ -10,7 +10,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+        
     </head>
     <body>
         <h1>Panel de Atracciones</h1>
