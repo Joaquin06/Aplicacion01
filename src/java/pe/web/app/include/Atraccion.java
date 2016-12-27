@@ -20,8 +20,8 @@ public class Atraccion {
 //    private String img4;
 //    private String img5;
 
-public Atraccion(){
-}
+//public Atraccion(){
+//}
 
     public Atraccion(int cod_atraccion, String nombre, String descripcion, int umbrales, boolean estado) {
         this.cod_atraccion = cod_atraccion;

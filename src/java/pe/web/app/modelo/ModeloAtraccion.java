@@ -25,7 +25,7 @@ public class ModeloAtraccion extends AccesoMSSQL{
         ResultSet rs=null;
         
         try {
-                String sql="CALL SelectAllAtracciones()";
+                String sql="EXEC SelectAllAtracciones";
                 pst=getConexion().prepareCall(sql);
                 rs=pst.executeQuery();
                 while (rs.next()) {                
@@ -56,13 +56,13 @@ public class ModeloAtraccion extends AccesoMSSQL{
         
     }
     
-        public static void main(String[] args) {
-        ModeloAtraccion mp=new ModeloAtraccion();
-        for (Atraccion a : mp.getAllAtracciones()) {
-            System.out.println(a.getUmbrales());
-        }
-        
-    }
+//        public static void main(String[] args) {
+//        ModeloAtraccion mp=new ModeloAtraccion();
+//        for (Atraccion a : mp.getAllAtracciones()) {
+//            System.out.println(a.getNombre());
+//        }
+//        
+//    }
     
 }
 
