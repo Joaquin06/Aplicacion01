@@ -23,7 +23,7 @@ public class ControladorAtracciones {
             ModeloAtraccion mp=new ModeloAtraccion();
         ArrayList<Atraccion> atraccion=mp.getAllAtracciones();
         
-        htmlcode+="<table border=\"1\">\n" +
+        htmlcode+="<table class=\"table table-bordered table-hover\"  border=\"1\">\n" +
 "            <tr>\n" +
 "                <th>CODIGO</th>\n" +
 "                <th>ATRACCION</th>\n" +

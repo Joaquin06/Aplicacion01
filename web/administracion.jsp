@@ -14,15 +14,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all" />
         
-        
-        
+        <title>Primera Muestra</title>     
     </head>
     <body>
+        
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         
-        <h1>Panel de Atracciones</h1>
-        <% ControladorAtracciones cp=new ControladorAtracciones(); %>
-        <%=cp.getPanelView() %>
+        <br>
+        
+        <section class="container">
+            <div class="row">
+                <div class="col-md-12"> 
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Panel de Atracciones</h3>
+                        </div>
+
+                            <div class="table-responsive">
+
+                                <% ControladorAtracciones cp=new ControladorAtracciones(); %>
+                                <%=cp.getPanelView() %>
+                            </div>
+                    </div>        
+                </div>        
+            </div>        
+        </section>
+        
     </body>
 </html>
