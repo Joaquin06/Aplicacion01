@@ -4,6 +4,7 @@
     Author     : JOAQ
 --%>
 
+<%@page import="pe.web.app.controllador.ControladorAtracciones"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,5 +14,7 @@
     </head>
     <body>
         <h1>Panel de Atracciones</h1>
+        <% ControladorAtracciones cp=new ControladorAtracciones(); %>
+        <%=cp.getPanelView() %>
     </body>
 </html>
